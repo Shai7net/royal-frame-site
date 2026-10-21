@@ -255,6 +255,166 @@ h3 { font-size: 1.2rem; }
   font-size: 0.9rem;
 }
 
+.download-section {
+  position: relative;
+  border-top: 1px solid var(--line);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(230, 189, 98, 0.1), transparent 26rem),
+    linear-gradient(180deg, rgba(255,255,255,0.025), rgba(255,255,255,0));
+}
+
+.download-heading { max-width: 790px; }
+
+.beta-notice {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: start;
+  gap: 0.85rem;
+  margin: 0 0 1.2rem;
+  padding: 1rem 1.15rem;
+  border: 1px solid rgba(131, 185, 255, 0.26);
+  border-radius: 1rem;
+  background: rgba(131, 185, 255, 0.07);
+}
+
+.beta-notice p { margin: 0.2rem 0 0; color: var(--muted); }
+
+.beta-dot {
+  width: 0.72rem;
+  height: 0.72rem;
+  margin-top: 0.42rem;
+  border-radius: 50%;
+  background: var(--blue);
+  box-shadow: 0 0 0 5px rgba(131, 185, 255, 0.12);
+}
+
+.download-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.download-card {
+  position: relative;
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  padding: clamp(1.35rem, 3vw, 2rem);
+  border: 1px solid var(--line);
+  border-radius: 1.45rem;
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.075), rgba(255,255,255,0.018)),
+    var(--surface);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+}
+
+.download-card::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 3px;
+  background: linear-gradient(90deg, var(--card-accent, var(--gold)), transparent 78%);
+  content: "";
+}
+
+.windows-card { --card-accent: #69aaf8; }
+.apple-card { --card-accent: #e8e8eb; }
+.android-card { --card-accent: #76d6a4; }
+.tv-card { --card-accent: #e6bd62; }
+
+.download-card-top {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.25rem;
+}
+
+.platform-icon {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 1rem;
+  background: rgba(255,255,255,0.05);
+  color: var(--card-accent, var(--gold));
+}
+
+.platform-icon svg {
+  width: 2rem;
+  height: 2rem;
+  fill: currentColor;
+}
+
+.platform-kicker {
+  color: var(--card-accent, var(--gold-soft));
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.download-card h3 { margin-bottom: 0.65rem; font-size: clamp(1.4rem, 2.5vw, 1.85rem); }
+.download-card > p { margin-top: 0; color: var(--muted); }
+
+.download-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.9rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.download-actions .button { min-height: 46px; }
+
+.text-link {
+  color: var(--gold-soft);
+  font-weight: 700;
+  text-underline-offset: 0.24em;
+}
+
+.text-link:hover,
+.text-link:focus-visible { color: var(--ink); }
+
+.install-notes {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.install-notes summary {
+  color: var(--gold-soft);
+  font-weight: 750;
+  cursor: pointer;
+}
+
+.install-notes ol {
+  margin: 0.85rem 0 0;
+  padding-inline-start: 1.3rem;
+  color: var(--muted);
+}
+
+.install-notes li + li { margin-top: 0.4rem; }
+
+.account-tip {
+  margin: 0.9rem 0 0;
+  padding: 0.75rem 0.85rem;
+  border-radius: 0.75rem;
+  background: rgba(230, 189, 98, 0.08);
+  color: var(--gold-soft) !important;
+}
+
+.android-one-app {
+  max-width: 900px;
+  margin: 1.2rem auto 0;
+  padding: 0.95rem 1.1rem;
+  border-inline-start: 3px solid var(--success);
+  border-radius: 0.75rem;
+  background: rgba(117, 221, 160, 0.06);
+  color: var(--muted);
+}
+
 .section { padding: 5.5rem 0; }
 .section.compact { padding: 3.4rem 0; }
 .section.alt { border-block: 1px solid var(--line); background: rgba(255, 255, 255, 0.025); }
@@ -419,6 +579,7 @@ html[data-language="en"] [data-lang="en"] { display: revert; }
   .split-panel,
   .legal-layout { grid-template-columns: 1fr; }
   .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .download-grid { grid-template-columns: 1fr; }
   .legal-nav { position: static; order: -1; }
   .legal-nav a { display: inline-block; }
 }

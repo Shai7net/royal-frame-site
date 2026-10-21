@@ -41,6 +41,9 @@ def local_target(page: Path, link: str) -> Path | None:
 
 errors: list[str] = []
 for page in sorted(ROOT.glob("*.html")):
+    # Google Search Console verification files are deliberately one-line token files, not pages.
+    if page.name.startswith("google"):
+        continue
     text = page.read_text(encoding="utf-8")
     parser = PageParser()
     parser.feed(text)

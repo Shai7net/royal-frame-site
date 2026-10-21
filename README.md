@@ -14,6 +14,20 @@ Microsoft Store fields:
 The site contains no analytics, cookies, build step or external runtime dependency. It is designed
 to be served directly by GitHub Pages from the `main` branch root.
 
+## Download destinations
+
+The home-page download center deliberately presents four device choices while keeping the actual
+distribution model accurate:
+
+- Windows uses the latest public `RoyalFrameSetup.exe` release.
+- Apple opens the installable web controller at <https://royal-frame-remote.web.app>; there is no
+  native App Store build yet.
+- Android phone/tablet and Android TV have separate instruction cards but use the same Play package,
+  `net.shai7.royalframe`.
+- While the Play release is in closed testing, both Android cards start at the tester opt-in URL.
+  The TV instructions use Google Play's remote-device picker so testers do not type URLs with a TV
+  remote.
+
 ## Local preview
 
 Serve this directory with any static HTTP server and open `index.html`. Do not rely on `file://`
