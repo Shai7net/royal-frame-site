@@ -346,6 +346,17 @@ h3 { font-size: 1.2rem; }
   fill: currentColor;
 }
 
+.platform-wordmark {
+  width: 9rem;
+  padding-inline: 0.75rem;
+}
+
+.platform-wordmark img {
+  width: 100%;
+  max-height: 2rem;
+  object-fit: contain;
+}
+
 .platform-kicker {
   color: var(--card-accent, var(--gold-soft));
   font-size: 0.78rem;
