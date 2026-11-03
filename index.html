@@ -129,11 +129,39 @@
                 <span data-lang="he">פתיחת אפליקציית הווב</span><span data-lang="en">Open the web app</span>
               </a>
             </div>
-            <details class="install-notes">
-              <summary><span data-lang="he">הוספה למסך הבית</span><span data-lang="en">Add it to your Home Screen</span></summary>
-              <ol data-lang="he"><li>פתחו את הקישור ב-Safari.</li><li>לחצו על שיתוף ואז “הוספה למסך הבית”.</li><li>הפעילו “פתיחה כיישום אינטרנט” ולחצו “הוספה”.</li></ol>
-              <ol data-lang="en"><li>Open the link in Safari.</li><li>Tap Share, then “Add to Home Screen.”</li><li>Turn on “Open as Web App,” then tap Add.</li></ol>
-            </details>
+            <!-- Visible, not folded away: on an iPhone this is the install, there is no button for it.
+                 iOS 26 moved Share behind the address bar's "⋯", so both routes are named. -->
+            <div class="ios-guide">
+              <p class="ios-guide-title"><span data-lang="he">הוספה למסך הבית, לפני ההתחברות</span><span data-lang="en">Add it to your Home Screen, before you sign in</span></p>
+              <ol class="ios-steps">
+                <li>
+                  <div class="ios-art" aria-hidden="true">
+                    <span class="ios-key">&#8943;</span>
+                    <svg class="ios-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+                    <span class="ios-key"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 8l5-5 5 5M5 12v8h14v-8"/></svg></span>
+                  </div>
+                  <p data-lang="he">פתחו את הקישור ב-Safari, הקישו על ⋯ ליד שורת הכתובת ואז על “שיתוף”. באייפון ישן יותר “שיתוף” נמצא בתחתית המסך.</p>
+                  <p data-lang="en">Open the link in Safari, tap ⋯ beside the address bar, then Share. On an older iPhone, Share is at the bottom.</p>
+                </li>
+                <li>
+                  <div class="ios-art" aria-hidden="true">
+                    <span class="ios-row"><span data-lang="he">הוספה למסך הבית</span><span data-lang="en">Add to Home Screen</span>
+                      <svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="4"/><path d="M12 8v8M8 12h8"/></svg></span>
+                    <span class="ios-switch"></span>
+                  </div>
+                  <p data-lang="he">בחרו “הוספה למסך הבית”, השאירו את “פתיחה כיישום אינטרנט” מופעל ולחצו “הוספה”.</p>
+                  <p data-lang="en">Choose “Add to Home Screen”, keep “Open as Web App” on, and tap Add.</p>
+                </li>
+                <li>
+                  <div class="ios-art" aria-hidden="true">
+                    <img class="ios-icon" src="assets/royal-frame-icon.png" alt="">
+                    <span class="ios-icon-name">Royal Frame</span>
+                  </div>
+                  <p data-lang="he">פתחו את Royal Frame ממסך הבית והתחברו שם. ל-Safari ולאפליקציה שבמסך הבית יש התחברות נפרדת.</p>
+                  <p data-lang="en">Open Royal Frame from your Home Screen and sign in there. Safari and the Home Screen app keep separate sign-ins.</p>
+                </li>
+              </ol>
+            </div>
           </article>
 
           <article class="download-card android-card" id="download-android">
