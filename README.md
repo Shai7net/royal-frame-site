@@ -36,4 +36,4 @@ for final verification because browser behavior differs from a real origin.
 ## Public contact
 
 Royal Frame is developed and operated by Shai Tiri and distributed under the HayotzerAI brand.
-Support and privacy requests use `shai7net@gmail.com`.
+Support and privacy requests use `royalframe.net@gmail.com`.
